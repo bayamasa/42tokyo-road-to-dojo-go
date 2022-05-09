@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"42tokyo-road-to-dojo-go/pkg/server"
+	"42tokyo-road-to-dojo-go/pkg/infra/http"
 )
 
 var (
@@ -17,5 +17,5 @@ func init() {
 }
 
 func main() {
-	server.Serve(addr)
+	http.Serve(addr)
 }
